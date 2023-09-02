@@ -1,17 +1,17 @@
 <template>
   <ion-page>
-    <ion-toolbar>
-      <ion-title>About</ion-title>
-    </ion-toolbar>
+    <ion-toolbar></ion-toolbar>
     <ion-content :fullscreen="true" color="light" class="content-wrapper">
       <ContentWrapper>
-        <template v-slot:content> About </template>
+        <template v-slot:content>
+          <p>It's currently empty</p>
+        </template>
       </ContentWrapper>
     </ion-content>
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import ContentWrapper from "@/components/ContentWrapper.vue";
 import {
   IonPage,
@@ -33,9 +33,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style>
-.content-wrapper {
-  overflow: hidden;
-}
-</style>

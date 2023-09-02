@@ -1,23 +1,11 @@
 <template>
-  <div :class="padding">
+  <div class="py-5 px-5">
     <slot name="content"></slot>
   </div>
 </template>
-  
-  <script>
+
+<script lang="ts">
 import { defineComponent } from "vue";
 
-export default defineComponent({
-  props: {
-    reducePadding: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  computed: {
-    padding() {
-      return this.reducePadding ? "px-2 py-2" : "px-4 py-2";
-    },
-  },
-});
+export default defineComponent({});
 </script>
