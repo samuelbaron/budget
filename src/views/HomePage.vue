@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import ContentWrapper from "@/components/ContentWrapper.vue";
+import ContentWrapper from "@/components/ui/ContentWrapper.vue";
 import {
   IonPage,
   IonHeader,
