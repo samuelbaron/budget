@@ -4,7 +4,7 @@
     <ion-content :fullscreen="true" color="light" class="content-wrapper">
       <ContentWrapper>
         <template v-slot:content>
-          <p>It's currently empty</p>
+          <ion-toggle>Setting 1</ion-toggle><br /><br />
         </template>
       </ContentWrapper>
     </ion-content>
@@ -19,6 +19,7 @@ import {
   IonToolbar,
   IonTitle,
   IonContent,
+  IonToggle,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 
@@ -30,6 +31,7 @@ export default defineComponent({
     IonTitle,
     IonContent,
     ContentWrapper,
+    IonToggle,
   },
 });
 </script>
