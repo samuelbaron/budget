@@ -5,7 +5,7 @@
       <ContentWrapper>
         <template v-slot:content>
           <div class="flex flex-col w-full relative">
-            <h1 class="my-2 text-lg">Hello Sam</h1>
+            <h1 class="text-lg">Hello Sam</h1>
             <ion-segment value="default" class="">
               <ion-segment-button value="default">
                 <ion-label>Week</ion-label>
@@ -73,18 +73,6 @@ import {
 } from "@ionic/vue";
 
 export default {
-  data() {
-    return {
-      add,
-      homeOutline,
-      expenses: [
-        { text: "10 zł" },
-        { text: "23 zł" },
-        { text: "81 zł" },
-        { text: "4 zł" },
-      ],
-    };
-  },
   components: {
     IonPage,
     IonHeader,
@@ -99,6 +87,18 @@ export default {
     IonSegmentButton,
     IonSegment,
     IonModal,
+  },
+  data() {
+    return {
+      add,
+      homeOutline,
+      expenses: [
+        { text: "10 zł" },
+        { text: "23 zł" },
+        { text: "81 zł" },
+        { text: "4 zł" },
+      ],
+    };
   },
 };
 </script>
