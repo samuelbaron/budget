@@ -39,13 +39,6 @@ import { homeOutline, settingsOutline, podiumOutline } from "ionicons/icons";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  data() {
-    return {
-      homeOutline,
-      settingsOutline,
-      podiumOutline,
-    };
-  },
   components: {
     IonTabBar,
     IonTabButton,
@@ -54,6 +47,13 @@ export default defineComponent({
     IonIcon,
     IonPage,
     IonRouterOutlet,
+  },
+  data() {
+    return {
+      homeOutline,
+      settingsOutline,
+      podiumOutline,
+    };
   },
 });
 </script>
